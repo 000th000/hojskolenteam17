@@ -1,42 +1,91 @@
 ---
 import cardimage from "../assets/images/cardimage.png";
 import cardimagebigger from "../assets/images/cardimagebigger.png";
+import groupphoto from "../assets/images/groupphoto.png";
 ---
 
 
 
-<div class="container p-7">
+
+<div class="container p-7 flex flex-col justify-between">
     <div class="c-indhold">
         <img class="rounded-3xl" src={cardimagebigger.src} alt="" alt="">
     </div>
 
-    <div class="text-Orange-orange-red-900">
+    <div class="
+    text-Orange-orange-red-900
+    pt-2">
+        <div class="c-indhold font-bold">
+            <p>New York, Caribien, Hawaii, Mexico</p>
+        </div>
+    
+        <div class="c-indhold3 flex pt-2 pl-[2px] font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" height="8%" width="8%" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+            <p class="pl-2">Fa pladser tilbage</p>
+        </div>
+    
+        <div class="c-indhold3 flex pt-2 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" height="10%" width="10%" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+            <p class="pl-2">Varighed 3 maneder</p>
+        </div>
+    </div>
+</div>
 
+
+
+<!-- <div class="container222 p-7 flex flex-col justify-between">
+    <div class="c-indhold">
+        <img class="rounded-3xl" src={groupphoto.src} alt="" alt="">
+    </div>
+
+    <div class="
+    text-Orange-orange-red-900
+    pt-2">
         <div class="c-indhold">
             <p>New York, Caribien, Hawaii, Mexico</p>
         </div>
     
-        <div class="c-indhold3 flex">
-            <svg xmlns="http://www.w3.org/2000/svg" height="10%" width="10%" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
-            <p>Få pladser tilbage</p>
+        <div class="c-indhold3 flex pt-2 pl-[2px]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="8%" width="8%" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+            <p class="pl-2">Fa pladser tilbage</p>
         </div>
     
-        <div class="c-indhold3 flex">
-            <svg xmlns="http://www.w3.org/2000/svg" height="10%" width="10%" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
-            <p>Varighed 3 måneder</p>
+        <div class="c-indhold3 flex pt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" height="10%" width="10%" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+            <p class="pl-2">Varighed 3 maneder</p>
         </div>
     </div>
+</div> -->
+
+<!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
 
 
-</div>
+
+
+
 
 <style>
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+
+.container {
+    display: block; /* Altid synlig på desktop */
+}
+
+.container222 {
+    display: none; /* Skjult som standard */
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        display: none; /* Skjul container på små skærme */
     }
+
+    .container222 {
+        display: block; /* Aktiver kun container222 på små skærme */
+    }
+}
+
 </style>
+
 
 
 
