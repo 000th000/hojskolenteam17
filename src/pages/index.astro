@@ -6,10 +6,48 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<section class="">
+<div class=" h-screen flex flex-col justify-center items-center bg-cover bg-center bg-[url('src/assets/images/indexhero.png')] flex-shrink	">
+	<div>
+    	<div class="">
+		<img src="src/assets/images/hojskolelogo.png" alt="logo">
+		</div>
+		<div class="flex text-white justify-between my-2">
+		<p>Grupperejser</p><p>Eventuyr</p>
+		<p>Fællesskab</p>
+		</div>
+	</div>
+	<button class="flex px-4 py-2 content-center align-middle gap-3 bg-orange-500 rounded-3xl text-white my-10">Se alle rejser</button>
+</div>
+  </section>
+
+  <section>
+		<h1 class="flex justify-center">Er du klar til dit livs eventyr?</h1>
+	  <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8 max-w-7xl mx-auto p-6">
+    <div class="order-last md:order-none flex justify-center items-center">
+      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+    </div>
+    <div class="flex flex-col content-around px-5 pb-5 items-center">
+      <h2 class="md:self-start">Tag med på höjskolendk</h2>
+      <p class="">
+        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+
+Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre skønne unge med et stærkt, inspirerende og meningsfulde sammenhold  undervisning. 
+
+Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.
+Vi glæder os til at lære dig at kende!</p>
+	<button class="flex px-4 py-2 content-center align-middle gap-3 bg-orange-500 rounded-3xl text-white my-5">Se alle rejser</button>
+
+    </div>
+	  </article>
+  </section>
+
+  
+
+
+    <section>
+		<h1 class="flex justify-center">Hvor skal vi hen?</h1>
+	  cards section
+  </section>
+
 </MainLayout>
