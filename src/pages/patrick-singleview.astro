@@ -1,0 +1,43 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import thumbsup from "../assets/images/thumbsup.png";
+
+// import handslide from "../assets/handslide.png"
+// import recycle from "../assets/recycle.png"
+
+import Card from "../components/Card.astro";
+---
+
+
+<div>
+    <div>
+        <Image src={thumbsup} alt=""></Image>
+    </div>
+</div>
+
+
+<h1>Test</h1>
+
+<section class="grid md:grid-cols-6">
+    <Card></Card>
+    <Card></Card>
+    <Card></Card>
+    <Card></Card>
+    <Card></Card>
+    <Card></Card>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- <img src={handslide.src} alt="handslide" class="max-w-20 max-h-20 pb-5"> -->

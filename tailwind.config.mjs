@@ -7,24 +7,24 @@ export default {
 	theme: {
 
         /* Tilføj din egen farvepalette nedenfor */
-        // colors: {
-        //     transparent: 'transparent',
-        //     current: 'currentColor',
-        //     'farvenavn': {
-        //         50: '#hexkode',     
-        //         100: '#hexkode',
-        //         200: '#hexkode',
-        //         300: '#hexkode',
-        //         400: '#hexkode',
-        //         500: '#hexkode',
-        //         600: '#hexkode',
-        //         700: '#hexkode',
-        //         800: '#hexkode',
-        //         900: '#hexkode',
-        //     },
-        //     'white': '#fff',
-        //     'black': '#000',
-        // },
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            'Orange': { 
+                "orange-red-700": "rgba(154, 54, 0, 1)",
+                "orange-red-300": "rgba(255, 156, 102, 1)",
+                "orange-red-900": "rgba(51, 18, 0, 1)",
+                "orange-red-600": "rgba(204, 71, 1, 1)",
+                "orange-red-200": "rgba(255, 189, 153, 1)",
+                "orange-red-800": "rgba(102, 36, 1, 1)",
+                "orange-red-500": "rgba(255, 89, 0, 1)",
+                "orange-red-100": "rgba(255, 222, 204, 1)",
+                "orange-red-400": "rgba(255, 121, 51, 1)",
+                "orange-red-50": "rgba(255, 238, 229, 1)"
+            },
+            'white': '#fff',
+            'black': '#000',
+        },
 
          /* Tilføj din egen spacing nedenfor */
         // spacing: {
