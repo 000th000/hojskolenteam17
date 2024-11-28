@@ -26,22 +26,38 @@ export default {
             'black': '#000',
         },
 
+        
+
          /* Tilføj din egen spacing nedenfor */
         // spacing: {
         //     'm': '40px',
         // },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-        // fontFamily: {
-        //     sans: ['Prompt', 'sans-serif'],
-        //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-        // },
+        fontFamily: {
+            sans: ['Prompt', 'sans-serif'],
+            'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
+        },
 
         /* Tilføj dit typografiske hierarki herunder */
-        // fontSize: {
-        //     base: ['1rem', { lineHeight: '1.5rem' }],
-        //     large: ['2.5rem', { lineHeight: '3.75rem' }],
-        //   },
+        fontSize: {
+            "font-size-xs": "13px",
+            "font-size-s": "20px",
+            "font-size-sm": "22px",
+            "font-size-m": "28px",
+            "font-size-ml": "40px",
+            "font-size-l": "64px"
+          },
+
+          customProperties: {
+            "font-family-title": "Playfair Display",
+            "font-family-body": "Quicksand",
+            "font-weight-regular": "Regular",
+            "font-weight-medium": "Medium",
+            "font-weight-bold": "Bold",
+            "font-weight-light": "Light",
+            "font-weight-semibold": "Semibold"
+          },
 
         /* Tilføj dit fontvægt-hierarki nedenfor */
         //   fontWeight: {

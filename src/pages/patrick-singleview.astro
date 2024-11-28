@@ -4,6 +4,7 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import trustpilotstars1 from "../assets/images/trustpilotstars1.png";
 
 // import handslide from "../assets/handslide.png"
 // import recycle from "../assets/recycle.png"
@@ -12,25 +13,89 @@ import Card from "../components/Card.astro";
 ---
 
 
-<div>
-    <div>
-        <Image src={thumbsup} alt=""></Image>
-    </div>
-</div>
 
-
-<h1>Test</h1>
 
 <section class="grid md:grid-cols-6">
+    <!-- <Card></Card>
     <Card></Card>
     <Card></Card>
     <Card></Card>
     <Card></Card>
-    <Card></Card>
-    <Card></Card>
-
-
+    <Card></Card> -->
 </section>
+
+
+
+    
+    <div class="trust-container">
+        <div class="trust-indhold flex flex-col justify-center">
+            <h1>Reviews fra vores rejsende</h1>
+            <img class="" src={trustpilotstars1.src} alt="" alt="">
+        </div>
+    </div>
+    
+    
+    <!-- Anmeldelser -->
+    <div class="review-container flex flex-col justify-center"> 
+        <div class="review-indhold">
+            <!-- <img class="rounded-3xl" src={cardimagebigger.src} alt="" alt=""> -->
+            <h2>“Den bedste oplevelse jeg nogensinde har haft!”</h2>
+            <p>Jens Hansen</p>
+        </div>
+    </div>
+    
+    
+    
+    <!-- <div class="info-container">
+        <div class="info-indhold">
+            <h1>Infomøder</h1>
+            <h2>Mød rejseguiderne og tidligere rejsende</h2>
+            <p>Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure, vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores hyggelige infomøder i København eller Aarhus – eller mød os på et online infomøde.</p>
+            <a href="">Tilmeld dig infomøde</a>
+
+            <img class="rounded-3xl" src={cardimagebigger.src} alt="" alt="">
+        </div>
+    </div> -->
+
+
+
+
+
+
+<style>
+    .mobil-indhold-container{
+        display: block;
+    }
+
+    
+
+    .trust-container{
+
+    }
+
+    .trust-indhold{
+
+    }
+
+    .trust-indhold h1{
+        font-size: 100px;
+        text-align: center;
+        width: 700px;
+    }
+
+    .trust-indhold img{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 500px;
+        max-height: 100%;
+    }
+</style>
+
+
+
+
+
 
 
 
