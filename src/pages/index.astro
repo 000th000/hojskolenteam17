@@ -9,10 +9,10 @@ import Card from "../components/Card.astro";
 ---
 <MainLayout title="Titel">
 <section class="">
-<div class=" h-screen flex flex-col justify-center items-center bg-cover bg-center bg-[url('src/assets/images/indexhero.png')] flex-shrink	">
+<div class=" h-screen w-screen flex flex-col justify-center items-center bg-cover bg-center bg-[url('src/assets/images/indexhero.png')] flex-shrink	">
 	<div>
     	<div class="">
-		<img src="src/assets/images/hojskolelogo.png" alt="logo">
+		<img class="rounded-none" src="src/assets/images/hojskolelogo.png" alt="logo">
 		</div>
 		<div class="flex text-white justify-between my-2">
 		<p>Grupperejser</p><p>Eventuyr</p>
@@ -26,7 +26,7 @@ import Card from "../components/Card.astro";
   </section>
 
   <section>
-		<h1 class="flex justify-center">Er du klar til dit livs eventyr?</h1>
+		<h1 class="flex justify-center">Er du klar til <br> dit livs eventyr?</h1>
 	  <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8 max-w-7xl mx-auto p-6">
     <div class="order-last md:order-none flex justify-center items-center">
       <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
@@ -177,178 +177,85 @@ Vi glæder os til at lære dig at kende!</p>
 	  </article>
   </section>
 
-   <section class="py-10 px-5">
+   <section class=" px-5 max-w-7xl mx-auto p-6">
   <h1 class="text-center ">En rejse højskole fyldt med oplevelser</h1>
-  <article class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[85%] mx-auto">
-    <!-- Image Section -->
-    <div class="">
-      <img
-        class="rounded-3xl"
-        src="src/assets/images/filler.png"
-        alt="Card Image"
-      />
+  <!--  1 article start -->
+  <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8">
+    <div class="order-last md:order-none flex justify-center items-center">
+      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
     </div>
+    <div class="content-around px-5 pb-5">
+      <h3 class="pb-6">Frivilligt arbejde & Kulturforståelse</h3>
+      <p class="">Drømmer du om at lave frivilligt arbejde og gøre en forskel i et andet land? Mange af vores højskole rejser inkluderer frivilligt arbejde, hvor vi kommer helt tæt på de lokale. Det giver dig en unik indsigt i landet, større forståelse for kulturen og måden man lever på i de forskellige lande.
 
-    <!-- Text Section -->
-    <div class="flex flex-col justify-center text-center md:text-left">
-      <div class="flex items-center mb-4">
-        <h2 class="">Teambuilding</h2>
-      </div>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-        brænder for oplevelser, fællesskab og mødet med nye mennesker og
-        kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-        <br /><br />
-        Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og
-        et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre
-        skønne unge med et stærkt, inspirerende og meningsfulde sammenhold
-        undervisning.
-        <br /><br />
-        Du er sikker på en tryg rejseoplevelse da vi er medlem af
-        Rejsegarantifonden. Vi glæder os til at lære dig at kende!
-      </p>
+ </p>
     </div>
   </article>
-</section>
+  <!--  1 article slut -->
+  <!--  2 article start -->
+
+  <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-8 py-8">
+    <div class="content-around px-10 pb-5">
+      <h3 class="pb-6">Teambuilding</h3>
+      <p class="">
+        Hvorfor tage på et kedeligt kursus i Danmark, når du kan rejse ud i verden og udvikle dig samtidig? Du rejser sammen med andre unge voksne og lærer en hel masse om samarbejde, relationer, fællesskab, konflikter, styrker og stærke teams. Du får ikke blot rejse-erfaring på cv’et, men også et væld af brugbare redskaber til studie eller karriere.
 
 
-  <article class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[85%] mx-auto">
-
-
-    <!-- Text Section -->
-    <div class="flex flex-col justify-center text-center md:text-left">
-      <div class="flex items-center mb-4">
-        <h2 class="">Teambuilding</h2>
-      </div>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-        brænder for oplevelser, fællesskab og mødet med nye mennesker og
-        kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-        <br /><br />
-        Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og
-        et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre
-        skønne unge med et stærkt, inspirerende og meningsfulde sammenhold
-        undervisning.
-        <br /><br />
-        Du er sikker på en tryg rejseoplevelse da vi er medlem af
-        Rejsegarantifonden. Vi glæder os til at lære dig at kende!
       </p>
     </div>
-
-	   <!-- Image Section -->
-    <div class="">
-      <img
-        class="rounded-3xl"
-        src="src/assets/images/filler.png"
-        alt="Card Image"
-      />
+    <div class="order-last md:order-none flex justify-center items-center">
+      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
     </div>
   </article>
 
-
-  <article class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[85%] mx-auto">
-    <!-- Image Section -->
-    <div class="">
-      <img
-        class="rounded-3xl"
-        src="src/assets/images/filler.png"
-        alt="Card Image"
-      />
+  <!--  2 article slut -->
+  <!--  3 article start -->
+  <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
+    <div class="order-last md:order-none flex justify-center items-center">
+      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
     </div>
+    <div class="content-around px-10 pb-5">
+      <h3 class="pb-6">Friuger – et væld af muligheder
 
-    <!-- Text Section -->
-    <div class="flex flex-col justify-center text-center md:text-left">
-      <div class="flex items-center mb-4">
-        <h2 class="">Teambuilding</h2>
-      </div>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-        brænder for oplevelser, fællesskab og mødet med nye mennesker og
-        kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-        <br /><br />
-        Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og
-        et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre
-        skønne unge med et stærkt, inspirerende og meningsfulde sammenhold
-        undervisning.
-        <br /><br />
-        Du er sikker på en tryg rejseoplevelse da vi er medlem af
-        Rejsegarantifonden. Vi glæder os til at lære dig at kende!
-      </p>
+</h3>
+      <p class="">Efter spændende og lærerige undervisningsforløb, har vi – alt efter hvilken højskole rejse du vælger – lagt én eller flere friuger ind. Her har I mulighed for selv at tage styringen og udforske dét land, kontinent eller ø-rige vi befinder os i. Friugerne bliver brugt på forskellig vis og oftest deler holdet sig op i lidt mindre grupper for at tage på eventyr – andre gange rejser hele holdet sammen på en fed friuge.
+
+</p>
     </div>
   </article>
+  <!--  3 article slut -->
+  <!--  4 article start -->
+  <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-7 py-8">
+    <div class="content-around px-10 pb-5">
+      <h3 class="pb-6">Spændende kulturoplevelser</h3>
+      <p class="">Kulturen er vigtig at opleve, når man befinder sig i et nyt land. Det giver dig både nogle rigtigt spændende oplevelser og menneske-møder, men også en unik indsigt, du ikke kan læse dig til i en bog eller se i et rejseprogram. På vores højskole ture kan du opleve alt fra ældgamle Hindu-templer i Indien, surf-kulturen på Hawaii, Mayaindianerne i Guatemala, de gamle inkaruiner i Mexico, buddhisme i Thailand, te-plantager i Sri Lanka og kakao-farme i Costa Rica.
 
-<article class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[85%] mx-auto">
-
-
-    <!-- Text Section -->
-    <div class="flex flex-col justify-center text-center md:text-left">
-      <div class="flex items-center mb-4">
-        <h2 class="">Teambuilding</h2>
-      </div>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-        brænder for oplevelser, fællesskab og mødet med nye mennesker og
-        kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-        <br /><br />
-        Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og
-        et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre
-        skønne unge med et stærkt, inspirerende og meningsfulde sammenhold
-        undervisning.
-        <br /><br />
-        Du er sikker på en tryg rejseoplevelse da vi er medlem af
-        Rejsegarantifonden. Vi glæder os til at lære dig at kende!
-      </p>
+ </p>
     </div>
-
-	   <!-- Image Section -->
-    <div class="">
-      <img
-        class="rounded-3xl"
-        src="src/assets/images/filler.png"
-        alt="Card Image"
-      />
+    <div class="order-last md:order-none flex justify-center items-center pb-5">
+      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
     </div>
   </article>
-
-
-
-
-
-
-    <article class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[85%] mx-auto">
-    <!-- Image Section -->
-    <div class="">
-      <img
-        class="rounded-3xl"
-        src="src/assets/images/filler.png"
-        alt="Card Image"
-      />
+  <!--  4 article slut -->
+	<!--  5 article start -->
+  <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
+    <div class="order-last md:order-none flex justify-center items-center">
+      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
     </div>
+    <div class="content-around px-10 pb-5">
+      <h3>Vilde naturoplevelser
 
-    <!-- Text Section -->
-    <div class="flex flex-col justify-center text-center md:text-left">
-      <div class="flex items-center mb-4">
-        <h2 class="">Teambuilding</h2>
-      </div>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-        brænder for oplevelser, fællesskab og mødet med nye mennesker og
-        kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-        <br /><br />
-        Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og
-        et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre
-        skønne unge med et stærkt, inspirerende og meningsfulde sammenhold
-        undervisning.
-        <br /><br />
-        Du er sikker på en tryg rejseoplevelse da vi er medlem af
-        Rejsegarantifonden. Vi glæder os til at lære dig at kende!
-      </p>
+</h3>
+      <p class="">Ingen rejse ud i verden uden eventyrlige og vilde naturoplevelser. Mange af de destinationer, hvor vi tager på højskoleophold, byder på enestående og overdådig natur. Det kan være alt fra snorkleture i Caribien, river rafting i Thailand, spotte brøleaber i Costa Ricas regnskove, gå på opdagelse i Inka-ruinerne i Mexico, trekke i Himalayas bjerge i Nepal, sejle kajak i marine nationalparker, dykke med manta rays på Hawaii, vandre i New Zealands fabelagtige nationalparker eller tage på safari i Sri Lanka og se leoparder, elefanter og bjørne. Alle vores rejser er fyldt med storslåede oplevelser, som du aldrig vil glemme.
+
+</p>
     </div>
   </article>
+  <!--  5 article slut -->
 
   		<h1 class="flex justify-center">Er du klar til dit livs eventyr?</h1>
   <div class="flex justify-center my-10">
   <Button >Tilmed dig rejse</Button>
   </div>
-
+</section>
 </MainLayout>

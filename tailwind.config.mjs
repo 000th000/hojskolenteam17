@@ -30,31 +30,31 @@ export default {
     //     'm': '40px',
     // },
 
-        /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-        fontFamily: {
-            sans: ['Prompt', 'sans-serif'],
-            'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-        },
+    /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
+    fontFamily: {
+      sans: ["Quicksand"],
+      display: ["Playfair Display"] /* eksempel på ekstra font */,
+    },
 
-        /* Tilføj dit typografiske hierarki herunder */
-        fontSize: {
-            "font-size-xs": "13px",
-            "font-size-s": "20px",
-            "font-size-sm": "22px",
-            "font-size-m": "28px",
-            "font-size-ml": "40px",
-            "font-size-l": "64px"
-          },
+    /* Tilføj dit typografiske hierarki herunder */
+    fontSize: {
+      "font-size-xs": "13px",
+      "font-size-s": "20px",
+      "font-size-sm": "22px",
+      "font-size-m": "28px",
+      "font-size-ml": "40px",
+      "font-size-l": "64px",
+    },
 
-          customProperties: {
-            "font-family-title": "Playfair Display",
-            "font-family-body": "Quicksand",
-            "font-weight-regular": "Regular",
-            "font-weight-medium": "Medium",
-            "font-weight-bold": "Bold",
-            "font-weight-light": "Light",
-            "font-weight-semibold": "Semibold"
-          },
+    customProperties: {
+      "font-family-title": "Playfair Display",
+      "font-family-body": "Quicksand",
+      "font-weight-regular": "Regular",
+      "font-weight-medium": "Medium",
+      "font-weight-bold": "Bold",
+      "font-weight-light": "Light",
+      "font-weight-semibold": "Semibold",
+    },
 
     /* Tilføj dit fontvægt-hierarki nedenfor */
     //   fontWeight: {
