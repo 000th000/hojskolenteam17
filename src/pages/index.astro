@@ -6,256 +6,295 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import Card from "../components/Card.astro";
 
+
 ---
 <MainLayout title="Titel">
-<section class="">
-<div class=" h-screen w-screen flex flex-col justify-center items-center bg-cover bg-center bg-[url('src/assets/images/indexhero.png')] flex-shrink	">
-	<div>
-    	<div class="">
-		<img class="rounded-none" src="src/assets/images/hojskolelogo.png" alt="logo">
-		</div>
-		<div class="flex text-white justify-between my-2">
-		<p>Grupperejser</p><p>Eventuyr</p>
-		<p>Fællesskab</p>
-		</div>
-	</div>
-	<div class="my-10">
+<section class="overflow-hidden max-w-full">
+<div class=" h-screen w-screen flex flex-col justify-center items-center bg-cover bg-center bg-[url('src/assets/images/indexhero.png')] flex-shrink ">
+ <div>
+     <div class="">
+   <img class="rounded-none" src="src/assets/images/hojskolelogo.png" alt="logo">
+   </div>
+   <div class="flex text-white justify-between my-2">
+   <p>Grupperejser</p><p>Eventuyr</p>
+   <p>Fællesskab</p>
+   </div>
+ </div>
+ <div class="my-10">
 <Button>Se alle rejser</Button>
 </div>
+<!-- <div class="max-w-full z-10 overflow-hidden top-0 bottom-0 absolute mt-[725px]">
+ <svg width="2436" height="157" viewBox="0 0 2436 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <g clip-path="url(#clip0_239_429)">
+   <path d="M652.422 83.1578C770.162 97.2747 884.167 122.578 1001.58 137.925C1168.83 159.8 1343.01 161.121 1510 138.435C1672.27 116.441 1840.54 62.7996 2000.89 35.547C2143.09 11.3689 2298.35 1.41238 2436 31.6218L2436 157L0 157L-6.87709e-06 121.218C208.005 70.3832 433.635 57.2208 652.422 83.1578Z" fill="#FFEEE5"/>
+   </g>
+   <defs>
+   <clipPath id="clip0_239_429">
+   <rect width="2436" height="157" fill="white" transform="translate(2436 157) rotate(180)"/>
+   </clipPath>
+   </defs>
+   </svg>
+   </div> -->
 </div>
-  </section>
+ </section>
 
-  <section>
-		<h1 class="flex justify-center">Er du klar til <br> dit livs eventyr?</h1>
-	  <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8 max-w-7xl mx-auto p-6">
-    <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-    <div class="flex flex-col content-around px-5 pb-5 items-center">
-      <h2 class="md:self-start">Tag med på höjskolendk</h2>
-      <p class="">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
 
-Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre skønne unge med et stærkt, inspirerende og meningsfulde sammenhold  undervisning. 
+ <section>
+   <h1 class="flex justify-center">Er du klar til <br> dit livs eventyr?</h1>
+   <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8 max-w-7xl mx-auto p-6">
+   <div class="order-last md:order-none flex justify-center items-center">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+   <div class="flex flex-col content-around px-5 pb-5 items-center">
+     <h2 class="md:self-start">Tag med på höjskolendk</h2>
+     <p class="">
+       HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+
+
+Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre skønne unge med et stærkt, inspirerende og meningsfulde sammenhold  undervisning.
+
 
 Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.
 Vi glæder os til at lære dig at kende!</p>
 <div class="my-6">
 <Button>Se alle rejser</Button>
 </div>
-    </div>
-	  </article>
-  </section>
-
-  
+   </div>
+   </article>
+ </section>
 
 
-    <section class="hidden md:block">
-		<h1 class="flex justify-center">Hvor skal vi hen?</h1>
-		<article class="flex">
-    <Card></Card>
-    <Card></Card>
-    <Card></Card>
-    <Card></Card>
-    <Card></Card>
-		</article>
-		<div class="flex justify-center my-10">
+
+
+
+
+   <section class="hidden md:block">
+   <h1 class="flex justify-center">Hvor skal vi hen?</h1>
+   <article class="flex">
+   <Card></Card>
+   <Card></Card>
+   <Card></Card>
+   <Card></Card>
+   <Card></Card>
+   </article>
+   <div class="flex justify-center my-10">
 <Button>Se alle rejser</Button>
 </div>
 </section>
 
+
 <section class="">
-	<h1 class="flex justify-center">Reviews fra vores rejsende</h1>
-	<section class="py-10 px-5">
-  <!-- Trustpilot Logo Section -->
-  <div class="text-center mb-10">
-    <img
-      src="src/assets/images/trustpilotlogo.png"
-      alt="Trustpilot"
-      class="mx-auto mb-4"
-    />
-  </div>
+ <h1 class="flex justify-center">Reviews fra vores rejsende</h1>
+ <section class="py-10 px-5">
+ <!-- Trustpilot Logo Section -->
+ <div class="text-center mb-10">
+   <img
+     src="src/assets/images/trustpilotlogo.png"
+     alt="Trustpilot"
+     class="mx-auto mb-4"
+   />
+ </div>
 
-  <!-- Reviews Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-    <!-- Single Review -->
+
+ <!-- Reviews Grid -->
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+   <!-- Single Review -->
+   <div class=" p-6">
+     <div class="flex justify-center space-x-1 mb-4">
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-gray-400 text-2xl">★</span>
+     </div>
+     <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
+     <p class="text-sm text-gray-600">Jens Hansen</p>
+   </div>
+   <div class=" p-6">
+     <div class="flex justify-center space-x-1 mb-4">
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-gray-400 text-2xl">★</span>
+     </div>
+     <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
+     <p class="text-sm text-gray-600">Jens Hansen</p>
+   </div>
     <div class=" p-6">
-      <div class="flex justify-center space-x-1 mb-4">
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-gray-400 text-2xl">★</span>
-      </div>
-      <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
-      <p class="text-sm text-gray-600">Jens Hansen</p>
-    </div>
+     <div class="flex justify-center space-x-1 mb-4">
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-gray-400 text-2xl">★</span>
+     </div>
+     <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
+     <p class="text-sm text-gray-600">Jens Hansen</p>
+   </div>
     <div class=" p-6">
-      <div class="flex justify-center space-x-1 mb-4">
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-gray-400 text-2xl">★</span>
-      </div>
-      <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
-      <p class="text-sm text-gray-600">Jens Hansen</p>
-    </div>
-	   <div class=" p-6">
-      <div class="flex justify-center space-x-1 mb-4">
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-gray-400 text-2xl">★</span>
-      </div>
-      <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
-      <p class="text-sm text-gray-600">Jens Hansen</p>
-    </div>
-	   <div class=" p-6">
-      <div class="flex justify-center space-x-1 mb-4">
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-gray-400 text-2xl">★</span>
-      </div>
-      <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
-      <p class="text-sm text-gray-600">Jens Hansen</p>
-    </div>
-	   <div class=" p-6">
-      <div class="flex justify-center space-x-1 mb-4">
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-gray-400 text-2xl">★</span>
-      </div>
-      <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
-      <p class="text-sm text-gray-600">Jens Hansen</p>
-    </div>
+     <div class="flex justify-center space-x-1 mb-4">
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-gray-400 text-2xl">★</span>
+     </div>
+     <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
+     <p class="text-sm text-gray-600">Jens Hansen</p>
+   </div>
     <div class=" p-6">
-      <div class="flex justify-center space-x-1 mb-4">
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-Orange-500 text-2xl">★</span>
-        <span class="text-gray-400 text-2xl">★</span>
-      </div>
-      <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
-      <p class="text-sm text-gray-600">Jens Hansen</p>
-    </div>
-  </div>
-  <div class="flex justify-center my-10">
-  <Button >Læs mere</Button>
-  </div>
+     <div class="flex justify-center space-x-1 mb-4">
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-gray-400 text-2xl">★</span>
+     </div>
+     <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
+     <p class="text-sm text-gray-600">Jens Hansen</p>
+   </div>
+   <div class=" p-6">
+     <div class="flex justify-center space-x-1 mb-4">
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-Orange-500 text-2xl">★</span>
+       <span class="text-gray-400 text-2xl">★</span>
+     </div>
+     <p class="text-xl font-semibold mb-2">“Den bedste oplevelse jeg nogensinde har haft!”</p>
+     <p class="text-sm text-gray-600">Jens Hansen</p>
+   </div>
+ </div>
+ <div class="flex justify-center my-10">
+ <Button >Læs mere</Button>
+ </div>
 </section>
 </section>
 
 
+<div class="max-w-full overflow-hidden">
+<svg class="overflow-hidden" width="2264" height="146" viewBox="0 0 2264 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <path d="M1651.26 31.6721C1540.68 53.5274 1433.61 92.7009 1323.34 116.46C1166.26 150.327 1002.68 152.373 845.849 117.25C693.442 83.2009 513.612 69.906 377.196 31.6719C243.644 -5.75975 129.282 -15.0973 -1.19084e-05 31.6719L-3.0458e-05 145.999L2264 145.993C2068.65 67.2928 1856.74 -8.48268 1651.26 31.6721Z" fill="#FF9C66"/>
+ </svg>
+</div>
 
-  <section class="bg-Orange-300">
-	  <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8 max-w-7xl mx-auto p-6">
-		  <div class="flex flex-col content-around px-5 pb-5 items-center">
-		<h1 class="self-start">Infomøde</h1>
-      <h2 class="md:self-start">Tag med på höjskolendk</h2>
-      <p class="">
-        HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
 
-Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre skønne unge med et stærkt, inspirerende og meningsfulde sammenhold  undervisning. 
+ <section class="bg-Orange-300">
+   <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8 max-w-7xl mx-auto p-6">
+     <div class="flex flex-col content-around px-5 pb-5 items-center">
+   <h1 class="self-start">Infomøde</h1>
+     <h2 class="md:self-start">Tag med på höjskolendk</h2>
+     <p class="">
+       HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+
+
+Hvis du vil på højskole i udlandet og er vild med højskolefællesskab og et fantastisk rejseeventyr, glæd dig til en fed grupperejse med andre skønne unge med et stærkt, inspirerende og meningsfulde sammenhold  undervisning.
+
 
 Du er sikker på en tryg rejseoplevelse da vi er medlem af Rejsegarantifonden.
 Vi glæder os til at lære dig at kende!</p>
 <div class="my-6">
 <Button>Se alle rejser</Button>
 </div>
-    </div>
-    <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-  
-	  </article>
-  </section>
-
-   <section class=" px-5 max-w-7xl mx-auto p-6">
-  <h1 class="text-center ">En rejse højskole fyldt med oplevelser</h1>
-  <!--  1 article start -->
-  <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8">
-    <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-    <div class="content-around px-5 pb-5">
-      <h3 class="pb-6">Frivilligt arbejde & Kulturforståelse</h3>
-      <p class="">Drømmer du om at lave frivilligt arbejde og gøre en forskel i et andet land? Mange af vores højskole rejser inkluderer frivilligt arbejde, hvor vi kommer helt tæt på de lokale. Det giver dig en unik indsigt i landet, større forståelse for kulturen og måden man lever på i de forskellige lande.
-
- </p>
-    </div>
-  </article>
-  <!--  1 article slut -->
-  <!--  2 article start -->
-
-  <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-8 py-8">
-    <div class="content-around px-10 pb-5">
-      <h3 class="pb-6">Teambuilding</h3>
-      <p class="">
-        Hvorfor tage på et kedeligt kursus i Danmark, når du kan rejse ud i verden og udvikle dig samtidig? Du rejser sammen med andre unge voksne og lærer en hel masse om samarbejde, relationer, fællesskab, konflikter, styrker og stærke teams. Du får ikke blot rejse-erfaring på cv’et, men også et væld af brugbare redskaber til studie eller karriere.
+   </div>
+   <div class="order-last md:order-none flex justify-center items-center">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+    </article>
+ </section>
 
 
-      </p>
-    </div>
-    <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-  </article>
+  <section class=" px-5 max-w-7xl mx-auto p-6">
+ <h1 class="text-center ">En rejse højskole fyldt med oplevelser</h1>
+ <!--  1 article start -->
+ <article class="flex flex-col items-center md:grid grid-cols-2 md:pr-5 py-8">
+   <div class="order-last md:order-none flex justify-center items-center">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+   <div class="content-around px-5 pb-5">
+     <h3 class="pb-6">Frivilligt arbejde & Kulturforståelse</h3>
+     <p class="">Drømmer du om at lave frivilligt arbejde og gøre en forskel i et andet land? Mange af vores højskole rejser inkluderer frivilligt arbejde, hvor vi kommer helt tæt på de lokale. Det giver dig en unik indsigt i landet, større forståelse for kulturen og måden man lever på i de forskellige lande.
 
-  <!--  2 article slut -->
-  <!--  3 article start -->
-  <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
-    <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-    <div class="content-around px-10 pb-5">
-      <h3 class="pb-6">Friuger – et væld af muligheder
-
-</h3>
-      <p class="">Efter spændende og lærerige undervisningsforløb, har vi – alt efter hvilken højskole rejse du vælger – lagt én eller flere friuger ind. Her har I mulighed for selv at tage styringen og udforske dét land, kontinent eller ø-rige vi befinder os i. Friugerne bliver brugt på forskellig vis og oftest deler holdet sig op i lidt mindre grupper for at tage på eventyr – andre gange rejser hele holdet sammen på en fed friuge.
 
 </p>
-    </div>
-  </article>
-  <!--  3 article slut -->
-  <!--  4 article start -->
-  <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-7 py-8">
-    <div class="content-around px-10 pb-5">
-      <h3 class="pb-6">Spændende kulturoplevelser</h3>
-      <p class="">Kulturen er vigtig at opleve, når man befinder sig i et nyt land. Det giver dig både nogle rigtigt spændende oplevelser og menneske-møder, men også en unik indsigt, du ikke kan læse dig til i en bog eller se i et rejseprogram. På vores højskole ture kan du opleve alt fra ældgamle Hindu-templer i Indien, surf-kulturen på Hawaii, Mayaindianerne i Guatemala, de gamle inkaruiner i Mexico, buddhisme i Thailand, te-plantager i Sri Lanka og kakao-farme i Costa Rica.
+   </div>
+ </article>
+ <!--  1 article slut -->
+ <!--  2 article start -->
 
- </p>
-    </div>
-    <div class="order-last md:order-none flex justify-center items-center pb-5">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-  </article>
-  <!--  4 article slut -->
-	<!--  5 article start -->
-  <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
-    <div class="order-last md:order-none flex justify-center items-center">
-      <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
-    </div>
-    <div class="content-around px-10 pb-5">
-      <h3>Vilde naturoplevelser
+
+ <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-8 py-8">
+   <div class="content-around px-10 pb-5">
+     <h3 class="pb-6">Teambuilding</h3>
+     <p class="">
+       Hvorfor tage på et kedeligt kursus i Danmark, når du kan rejse ud i verden og udvikle dig samtidig? Du rejser sammen med andre unge voksne og lærer en hel masse om samarbejde, relationer, fællesskab, konflikter, styrker og stærke teams. Du får ikke blot rejse-erfaring på cv’et, men også et væld af brugbare redskaber til studie eller karriere.
+
+
+
+
+     </p>
+   </div>
+   <div class="order-last md:order-none flex justify-center items-center">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+ </article>
+
+
+ <!--  2 article slut -->
+ <!--  3 article start -->
+ <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
+   <div class="order-last md:order-none flex justify-center items-center">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+   <div class="content-around px-10 pb-5">
+     <h3 class="pb-6">Friuger – et væld af muligheder
+
 
 </h3>
-      <p class="">Ingen rejse ud i verden uden eventyrlige og vilde naturoplevelser. Mange af de destinationer, hvor vi tager på højskoleophold, byder på enestående og overdådig natur. Det kan være alt fra snorkleture i Caribien, river rafting i Thailand, spotte brøleaber i Costa Ricas regnskove, gå på opdagelse i Inka-ruinerne i Mexico, trekke i Himalayas bjerge i Nepal, sejle kajak i marine nationalparker, dykke med manta rays på Hawaii, vandre i New Zealands fabelagtige nationalparker eller tage på safari i Sri Lanka og se leoparder, elefanter og bjørne. Alle vores rejser er fyldt med storslåede oplevelser, som du aldrig vil glemme.
+     <p class="">Efter spændende og lærerige undervisningsforløb, har vi – alt efter hvilken højskole rejse du vælger – lagt én eller flere friuger ind. Her har I mulighed for selv at tage styringen og udforske dét land, kontinent eller ø-rige vi befinder os i. Friugerne bliver brugt på forskellig vis og oftest deler holdet sig op i lidt mindre grupper for at tage på eventyr – andre gange rejser hele holdet sammen på en fed friuge.
+
 
 </p>
-    </div>
-  </article>
-  <!--  5 article slut -->
+   </div>
+ </article>
+ <!--  3 article slut -->
+ <!--  4 article start -->
+ <article class="flex items-center flex-col md:grid grid-cols-2 md:pl-7 py-8">
+   <div class="content-around px-10 pb-5">
+     <h3 class="pb-6">Spændende kulturoplevelser</h3>
+     <p class="">Kulturen er vigtig at opleve, når man befinder sig i et nyt land. Det giver dig både nogle rigtigt spændende oplevelser og menneske-møder, men også en unik indsigt, du ikke kan læse dig til i en bog eller se i et rejseprogram. På vores højskole ture kan du opleve alt fra ældgamle Hindu-templer i Indien, surf-kulturen på Hawaii, Mayaindianerne i Guatemala, de gamle inkaruiner i Mexico, buddhisme i Thailand, te-plantager i Sri Lanka og kakao-farme i Costa Rica.
 
-  		<h1 class="flex justify-center">Er du klar til dit livs eventyr?</h1>
-  <div class="flex justify-center my-10">
-  <Button >Tilmeld dig rejse</Button>
-  </div>
+
+</p>
+   </div>
+   <div class="order-last md:order-none flex justify-center items-center pb-5">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+ </article>
+ <!--  4 article slut -->
+ <!--  5 article start -->
+ <article class="flex items-center flex-col md:grid grid-cols-2 md:pr-4 py-8">
+   <div class="order-last md:order-none flex justify-center items-center">
+     <img class="sd:pt-8" src="src/assets/images/filler.png" alt="" />
+   </div>
+   <div class="content-around px-10 pb-5">
+     <h3>Vilde naturoplevelser
+
+
+</h3>
+     <p class="">Ingen rejse ud i verden uden eventyrlige og vilde naturoplevelser. Mange af de destinationer, hvor vi tager på højskoleophold, byder på enestående og overdådig natur. Det kan være alt fra snorkleture i Caribien, river rafting i Thailand, spotte brøleaber i Costa Ricas regnskove, gå på opdagelse i Inka-ruinerne i Mexico, trekke i Himalayas bjerge i Nepal, sejle kajak i marine nationalparker, dykke med manta rays på Hawaii, vandre i New Zealands fabelagtige nationalparker eller tage på safari i Sri Lanka og se leoparder, elefanter og bjørne. Alle vores rejser er fyldt med storslåede oplevelser, som du aldrig vil glemme.
+
+
+</p>
+   </div>
+ </article>
+ <!--  5 article slut -->
+
+
+     <h1 class="flex justify-center">Er du klar til dit livs eventyr?</h1>
+ <div class="flex justify-center my-10">
+ <Button >Tilmed dig rejse</Button>
+ </div>
 </section>
 </MainLayout>
